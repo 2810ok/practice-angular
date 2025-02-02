@@ -1,12 +1,22 @@
-import { Component } from '@angular/core';
+import { Component ,Input} from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-
+import { HeaderComponent } from './header/header.component';
+import { UserModule } from './user/user.module';
+import { FormsModule } from '@angular/forms';
+import { FormComponent } from './user/form/form.component';
+import { ParentComponentComponent } from './parent-component/parent-component.component';
+import { CommonModule } from '@angular/common';
+import { ChildComponent } from './child/child.component';
+import { ParentComponent } from './parent/parent.component';
 @Component({
+
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet,HeaderComponent,FormComponent,UserModule,FormsModule,ParentComponentComponent,CommonModule,ChildComponent,ParentComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
+  
 })
 export class AppComponent {
   title = 'my-app';
+  
 }
