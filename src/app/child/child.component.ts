@@ -5,11 +5,11 @@ import { CommonModule } from '@angular/common';
   standalone:true,
   selector: 'app-child',
   imports:[ParentComponent,CommonModule],
-  template: `<h2>Child Component</h2>
-  <p>{{ message }}</p> <!-- Display the message received from the parent -->
+  template: `
+  <p> welcome{{ username }}</p> 
 `,
 
 })
 export class ChildComponent {
-  @Input() message: string = ''; 
+  @Input() username: string = ''; 
 }

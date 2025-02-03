@@ -8,10 +8,13 @@ import { ParentComponentComponent } from './parent-component/parent-component.co
 import { CommonModule } from '@angular/common';
 import { ChildComponent } from './child/child.component';
 import { ParentComponent } from './parent/parent.component';
+import { ChangeMeDirective } from './directive/change-me.directive';
+import { ShadowDomEncapComponent } from './ViewEncapsulation/shadow-dom-encap/shadow-dom-encap.component';
+import { CustomepipePipe } from './customepipe.pipe';
 @Component({
 
   selector: 'app-root',
-  imports: [RouterOutlet,HeaderComponent,FormComponent,UserModule,FormsModule,ParentComponentComponent,CommonModule,ChildComponent,ParentComponent],
+  imports: [CustomepipePipe,RouterOutlet,HeaderComponent,FormComponent,UserModule,FormsModule,ParentComponentComponent,CommonModule,ShadowDomEncapComponent,ChildComponent,ParentComponent,ChangeMeDirective],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
   

@@ -12,6 +12,12 @@
     <app-header> </app-header>
     <app-form></app-form>
     <app-parent-component> </app-parent-component>
+   <p appChangeMe [myName]=" 'directive call' "> hello </p>
+   <app-shadow-dom-encap> </app-shadow-dom-encap>
+   <br>
+   <br>
+   <p> The reverse of joy is {{ "joy" | customepipe | uppercase }} using pipes</p>
+
     <app-footer> </app-footer>
  
     </body>
